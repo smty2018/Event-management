@@ -1,0 +1,73 @@
+MYSQL COMMANDS
+
+DBMS: MYSQL 
+HOST: LOCAL HOST
+USER: ROOT 
+PASSWORD: 1234
+DATABASE: EVENT
+
+
+create database event;
+use event;
+
+create table decorations(sl_no int, event_type varchar(50),price int);
+insert into decorations values(1,"Birthdays and other small gatherings",100000);
+insert into decorations values(2,"weddings and receptions",300000);
+insert into decorations values(3,"Formal meetings and conferences",200000);
+insert into decorations values(4,"Fundraising events",100000);
+
+create table venue(sl_no int,location varchar (50),area varchar (50));
+insert into venue values(1,"Lake Land Country Club,Kolkata","800 seating|1200 floating");
+insert into venue values(2, "Royal Orchid Beach Resort,Goa","480 seating|1000 floating");
+insert into venue values(3,"Radisson Blu Hotel,New Delhi","700 seating|1050 floating");
+insert into venue values(4,"The Oberoi Udaivillas,Udaipur","250 seating|450 floating");
+insert into venue values(5,"JW Marriott Juhu,Mumbai","660 seating|1000 floating");
+
+create table starter (sl_no int,item_name varchar(50), price int) ;
+insert into starter values (1, "veg salad", 350) ;
+insert into starter values (2,"cheese corn salad", 400) ;
+insert into starter values (3, "chicken pasta salad", 450) ;
+insert into starter values (4, "crispy baby corn", 335) ;
+insert into starter values (5, "mushroom soup", 250) ;
+insert into starter values (6, "ginger garlic soup", 300) ;
+insert into starter values (7, "chicken sweet corn soup", 400) ;
+
+create table maincourse_veg(sl_no int, item_name varchar(50), price int) ;
+insert into maincourse_veg values(1, "butter naan", 100) ;
+insert into maincourse_veg values(2, "peas kachori", 60) ;
+insert into maincourse_veg values(3, "achari aloo dum", 200) ;
+insert into maincourse_veg values(4, "paneer butter masala", 230) ;
+insert into maincourse_veg values(5,"veg fried rice", 330) ;
+insert into maincourse_veg values(6, "veg hakka noodles", 350) ;
+insert into maincourse_veg values(7, "veg manchurian", 300) ;
+
+create table maincourse_non_veg(sl_no int, item_name varchar(50), price int) ;
+insert into maincourse_non_veg values(1,"masala kulcha", 150) ;
+insert into maincourse_non_veg values(2, "mutton biriyani",450) ;
+insert into maincourse_non_veg values(3, "chicken chaap", 400) ;
+insert into maincourse_non_veg values(4,"chicken bharta", 500) ;
+insert into maincourse_non_veg values(5,"chicken rezala", 550) ;
+insert into maincourse_non_veg values(6,"mixed fried rice",450) ;
+insert into maincourse_non_veg values(7,"chilli chicken",400) ;
+
+create table dessert(sl_no int, item_name varchar(50), price int) ;
+insert into dessert values(1,"ice cream",250) ;
+insert into dessert values(2,"baked rasogolla",150) ;
+insert into dessert values(3,"gulab jamun",150) ;
+insert into dessert values(4,"phirni",200) ;
+
+create table activities(sl_no int, activity varchar(50),price int);
+insert into  activities values(1,"Music",40000);
+insert into  activities values(2,"DJ",1200000);
+insert into  activities values(3,"Live Counter-kebabs",70000);
+insert into  activities values(4," Live Counter-mocktails",100000);
+insert into  activities values(5,"Dance Ball",50000);
+insert into  activities values(6,"Magic show",150000);
+insert into  activities values(7," Aesthetic Bokeh Lighting",30000);
+
+
+
+
+
+
+
